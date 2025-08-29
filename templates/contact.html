@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact – My Portfolio{% endblock %}
+
+{% block content %}
+  <section>
+    <div class="section-title">Get in touch</div>
+    <div class="contact-info">
+      <p>
+        I'm currently open to new opportunities and collaborations.  Whether you have a question or just want to say hi,
+        feel free to drop me a message.
+      </p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a><br />
+        <strong>Location:</strong> Macclesfield, UK
+      </p>
+      <div class="social-links">
+        <a href="#" aria-label="GitHub"><img src="{{ url_for('static', filename='images/github.svg') }}" alt="GitHub" width="24" height="24" /></a>
+        <a href="#" aria-label="LinkedIn"><img src="{{ url_for('static', filename='images/linkedin.svg') }}" alt="LinkedIn" width="24" height="24" /></a>
+        <a href="#" aria-label="Twitter"><img src="{{ url_for('static', filename='images/twitter.svg') }}" alt="Twitter" width="24" height="24" /></a>
+      </div>
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Home – AI Software Developer Portfolio{% endblock %}
+
+{% block content %}
+  <!-- Hero Section -->
+  <section class="hero">
+    <a href="#" aria-label="MyPicture">
+    <img class="my-picture" src="{{ url_for('static', filename='images/My Picture.png') }}" alt="my-picture" />
+    </a>
+    <h1>Hello, I'm Mehwish Naseer ud din</h1>
+    <h2>I'm an AI Software Developer</h2>
+    <p>Welcome to my personal website where I showcase my skills, projects and passion for development.</p>
+    <a href="{{ url_for('projects') }}" class="btn">View My Projects</a>
+  </section>
+
+  <!-- Introduction Section -->
+  <section>
+    <div class="section-title">About Me</div>
+    <div class="about-content">
+      <p>
+        I'm a developer based in {{ "Macclesfield" }} with a passion for building
+        elegant and functional applications. This site is a starting point – you can easily
+        edit the templates in the <code>templates/</code> directory to add your own story.
+      </p>
+      <p>
+        Feel free to browse through my projects and get in touch if you'd like to work together.
+      </p>
+      <p>
+        Use this project as a jumping off point for your own portfolio.  Replace the placeholder text
+        with your biography, technical skills and achievements.
+      </p>
+    </div>
+  </section>
+{% endblock %}

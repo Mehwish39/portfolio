@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}My Portfolio{% endblock %}</title>
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <!-- Optional: you can include a favicon here by placing it in static/images/ and referencing it -->
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="logo"><a href="{{ url_for('index') }}">My Portfolio</a></div>
+      <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('projects') }}">Projects</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Page content -->
+    {% block content %}{% endblock %}
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; {{ current_year }} My Portfolio. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
