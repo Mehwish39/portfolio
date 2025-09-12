@@ -33,7 +33,3 @@ This is a simple portfolio website built with **Python** and the **Flask** web f
 ## Deployment
 
 The app can be deployed to any platform that supports Python.  For example, you could deploy it on [Heroku](https://www.heroku.com/), [Render](https://render.com/) or a simple VPS.  Make sure to set the `FLASK_ENV` environment variable to `production` and configure a proper web server (e.g. Gunicorn) for production deployments.
-
-## License
-
-This project is provided under the MIT License.  Feel free to use it as a starting point for your own portfolio.
